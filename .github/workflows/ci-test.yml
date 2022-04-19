@@ -31,11 +31,11 @@ jobs:
     - name: ls
       run: ls
 
-#    - name: Publish Service
-#      run: dotnet publish --no-build ./Finance.PciDssIntegration.GrpcService/Finance.PciDssIntegration.GrpcService.csproj --configuration Release --output ./publish-api
+    - name: Publish Service
+      run: dotnet publish --no-build ./Finance.PciDssIntegration.GrpcContracts/Finance.PciDssIntegration.GrpcContracts.csproj --configuration Release --output ./publish-api
 
-#    - name: Check Service dir
-#      run: ls ./publish-api
+    - name: Check Service dir
+      run: ls ./publish-api
       
 #    - name: Publish image
 #      uses: docker/build-push-action@v1
